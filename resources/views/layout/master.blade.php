@@ -242,5 +242,11 @@
             return false;
         });
         </script>
+    <script>
+                $('#profile_image_reset_btn').click(function () {
+            $('#profile_image').val('');
+            $('#profile-image-group').find('.bootstrap-filestyle').find('input').val('');
+        });
+    </script>
 </body>
 </html>

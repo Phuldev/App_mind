@@ -1,23 +1,60 @@
 @extends('layout.master')
-@section('title','online_admission')
+@section('title', 'online_admission')
 @section('content')
-{{-- online_admission  --}}
-    <section>
+    {{-- online_admission --}}
+    <section class="Online_admission" stle="background-image: url(../image/air.png);background-repeat:no-repeat;background-position: center;">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    
-                            <div class="onlile_title text-center">
-                                <h1>Online Student &nbsp;<span style="font-weight: bold" class="text-uppercase">Admission Form</span> </h1>
-                                <p>Please fill out the form below and get enrolled now!</p>
-                            </div>
-                        <form action="">
-                            <input type="text" placeholder="Frist Name">
-                        </form>
-                    
+            <div class="online_title">Registration</div>
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter Your name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter Your name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter Your name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter Your name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter Your name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter Your name" required>
+                    </div>
                 </div>
-            </div>
+                <div class="gender-details">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label for="">
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>
+                        </label>
+                        <label for="">
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>
+                        </label>
+                        <label for="">
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
         </div>
+
     </section>
-{{-- online_admission  --}}
+    {{-- online_admission --}}
 @endsection

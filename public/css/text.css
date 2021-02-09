@@ -1563,3 +1563,91 @@ section {
     background: #25df3e;
     transition: background 0.2s ease-in-out;
 }
+
+
+/* online_admission  */
+
+.Online_admission {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.Online_admission .container {
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+.Online_admission .container .title {
+    font-size: 50px;
+    font-weight: 500;
+    position: relative;
+}
+
+.Online_admission .container .title::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 30%;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.Online_admission .container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Online_admission .container form .user-details .input-box {
+    margin: 20px 0 12px 0;
+    width: calc(100%/2 - 20px);
+}
+
+.Online_admission .container form .user-details .input-box .details {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form .user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 25px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #0bdf40;
+}
+
+form .gender-details .gender-title {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+form .gender-details .category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+form .gender-details .category label {}
+
+form .gender-details .category .dot {
+    height: 18px;
+}
+
+
+/* online_admission  */
