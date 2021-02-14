@@ -130,7 +130,7 @@
                                 -What is programming? </br>
                                 -Variables, Syntax and expressions </br>
                                 -Data Structure (Array) </br>
-                                -Api</br>
+                                -Restful Api</br>
                                 -Loop </br>
                                 -Functions </br>
                                 -Some useful Built-in functions </br>

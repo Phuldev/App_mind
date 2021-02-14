@@ -286,7 +286,7 @@ header {
     transition: 0.3s linear;
     position: relative;
     top: -7px;
-    left: 100px;
+    left: 120px;
     text-align: match-parent;
     background-color: #f4f8f7;
 }
@@ -731,158 +731,324 @@ header {
 
 /* why us css  */
 
-.section-about {
+.section-services_idu {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.about-section {
+.services_why-section {
     background: url(../image/2.jpeg) no-repeat right;
-    background-size: 60%;
+    background-size: 53%;
     background-color: #fff9f7;
     overflow: hidden;
-    padding: 100px 0;
+    padding: 140px 0;
     border-radius: 10px;
 }
 
-.inner-container {
+.services_why {
     width: 55%;
     float: left;
     background-color: #5ec54acc;
-    padding: 50px;
+    padding: 100px;
     box-shadow: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
 
-.inner-container h1 {
+.services_why h1 {
     margin-bottom: 30px;
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 900;
     color: #dfee0eec;
-}
-
-.inner-container span {
-    color: #fff;
+    text-align: center;
     text-transform: capitalize;
 }
 
-.about-text {
-    font-size: 30px;
-    color: rgb(5, 5, 5);
-    line-height: 30px;
-    text-align: justify;
-    margin-bottom: 40px;
+.services_why span {
     color: #fff;
 }
 
-.about-skills {
+.services_why .text {
     display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-    font-size: 30px;
-}
-
-.about-text {
+    align-items: center;
+    justify-content: center;
     font-size: 25px;
 }
 
-.about-skills span {
-    font-weight: bold;
-}
-
-.why_btn h5 {
-    font-size: 35px;
+.services_why .text li {
+    margin: 18px;
     color: #fff;
 }
 
-.why_btn .btn {
-    align-items: center;
-    padding: 10px;
-    margin: 50px;
+.text-1 p {
+    font-size: 25px;
+    color: #fff;
 }
 
-.why_btn .btn span {
-    color: #dfee0eec;
-    font-weight: bold;
-    font-size: 50px;
+@media screen and (max-width:1200px) {
+    .services_why-section {
+        padding: 100px 40px;
+        background-size: 100%;
+    }
+    .services_why {
+        width: 100%;
+        height: 50vh;
+    }
+    .services_why h1 {
+        font-size: 50px;
+    }
+    .services_why span {
+        color: #fff;
+    }
+    .services_why .text {
+        font-size: 20px;
+    }
+    .services_why .text li {
+        margin: 10px;
+        ;
+    }
+    .text-1 p {
+        display: none;
+    }
 }
 
 
 /* why us css  */
 
 
-/* why us  media query   */
+/* services ind  */
+
+
+/* services media query */
+
+@media (max-width: 1200px) {
+    .our_ser_demo {
+        width: 50%;
+        height: 290px;
+        background-color: #89f074a1;
+        background-size: 500px;
+        padding: 50px;
+        position: relative;
+        top: 250.5px;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .social_icon i {
+        font-size: 50px;
+    }
+    .services_idu_content {
+        position: relative;
+        left: 0%;
+        top: 15px;
+    }
+    .services_idu_content1 {
+        position: relative;
+        left: 0%;
+        top: 15px;
+    }
+    .services-box {
+        max-width: 100%;
+    }
+    .services-title {
+        font-size: 20px;
+    }
+    .services-desc {
+        font-size: 18px;
+    }
+    .our_services_demo {
+        min-height: 100vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4f8f7;
+    }
+    .demo_our {
+        background: url(../image/2.jpeg) no-repeat;
+        height: 50;
+        background-size: 100%;
+    }
+    .our_ser_demo {
+        width: 50%;
+        height: 290px;
+        background-color: #89f074a1;
+        background-size: 500px;
+        padding: 50px;
+        position: relative;
+        top: 250.5px;
+    }
+    .our_ser_demo h3 {
+        color: #dfee0eec;
+        font-size: 50px;
+    }
+    .our_ser_demo h3 span {
+        color: #f4f8f7;
+    }
+    .content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .social_icon i {
+        font-size: 50px;
+    }
+    .services_idu_content {
+        position: relative;
+        left: 18%;
+        top: 15px;
+    }
+    .services_idu_content1 {
+        position: relative;
+        left: 10%;
+        top: 15px;
+    }
+    .content .sidebar {
+        width: 100%;
+    }
+    .services-box {
+        max-width: 100%;
+    }
+    .services-desc {
+        font-size: 18px;
+    }
+    .our_services_demo {
+        min-height: 36vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4f8f7;
+        overflow: hidden;
+    }
+    .demo_our {
+        height: 27vh;
+        background-size: 100%;
+    }
+    .our_ser_demo {
+        width: 100%;
+        height: 180px;
+        background-color: #89f074a1;
+        text-align: center;
+        position: relative;
+        top: 50px;
+    }
+    .our_ser_demo h3 {
+        font-size: 25px;
+    }
+    .services-section_our {
+        width: 100%;
+        padding-top: 0px;
+    }
+}
 
 @media screen and (max-width:480px) {
+    */ .about-section {
+        width: 100%;
+        height: 100vh;
+    }
+    #card {
+        width: 100%;
+    }
+    #card .card .services-icon {
+        text-align: center;
+    }
+    #card .card {
+        margin: 5px;
+        position: relative;
+        top: -74px;
+    }
+    .services_idu-section {
+        background-size: 50%;
+        background-color: #948f8e;
+        overflow: hidden;
+        padding: 0 0;
+        position: relative;
+        top: -75px;
+    }
+    .services_idu {
+        width: 50%;
+        float: right;
+        background-color: #19e273;
+        padding: 35px;
+        box-shadow: rgba(0, 0, 0, 0.3);
+        border-radius: 0px;
+    }
+    .services_idu h1 {
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: 900;
+        color: #dfee0eec;
+        text-align: center;
+    }
+    .services_idu span {
+        color: #fff;
+        text-transform: capitalize;
+    }
     .section-about {
         width: 100%;
         height: 100vh;
     }
-    .about-section {
-        background-size: 60%;
-        background-color: #fff9f7;
-        overflow: hidden;
-        padding: 100px 0;
-        border-radius: 10px;
-    }
-    .inner-container {
-        width: 55%;
-        float: left;
-        background-color: #5ec54acc;
-        padding: 50px;
-        box-shadow: rgba(0, 0, 0, 0.3);
-        border-radius: 10px;
-    }
-    .inner-container h1 {
-        margin-bottom: 30px;
-        font-size: 60px;
-        font-weight: 900;
-        color: #dfee0eec;
-    }
-    .inner-container span {
-        color: #fff;
-        text-transform: capitalize;
-    }
-    .about-text {
-        font-size: 30px;
-        color: rgb(5, 5, 5);
-        line-height: 30px;
-        text-align: justify;
-        margin-bottom: 40px;
-        color: #fff;
-    }
-    .about-skills {
-        display: flex;
-        justify-content: space-between;
-        font-weight: bold;
-        font-size: 25px;
-    }
-    .about-text {
-        font-size: 25px;
-    }
-    .about-skills span {
-        font-weight: bold;
-    }
-    .why_btn h5 {
-        font-size: 20px;
-        color: #fff;
-    }
-    .why_btn .btn {
-        align-items: center;
-        padding: 10px;
-        margin: 50px;
-    }
-    .why_btn .btn span {
-        color: #dfee0eec;
-        font-weight: bold;
+    .social_icon i {
         font-size: 50px;
     }
+    .services_idu_content {
+        position: relative;
+        left: 0%;
+        top: 15px;
+    }
+    .services_idu_content1 {
+        position: relative;
+        left: 0%;
+        top: 15px;
+    }
+    .content .sidebar {
+        width: 100%;
+    }
+    .main-content .img_services {
+        display: none;
+    }
+    .services-box {
+        max-width: 100%;
+    }
+    .services-title {
+        font-size: 25px;
+    }
+    .services-desc {
+        font-size: 22px;
+    }
+    .our_services_demo {
+        height: 30vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        /* background-color: #7bd8c1; */
+        overflow: hidden;
+    }
+    .demo_our {
+        height: 27px;
+        background-size: 100%;
+        /* background: aqua; */
+        display: contents;
+    }
+    .our_ser_demo {
+        width: 100%;
+        height: 0px;
+        background-color: #03c423;
+        text-align: center;
+        position: relative;
+        top: 16px;
+    }
+    .our_ser_demo h3 {
+        font-size: 25px;
+        position: relative;
+        top: -31px;
+    }
+    .services-section {
+        width: 100%;
+        padding-top: 0px;
+    }
 }
-
-
-/* why us  media query   */
 
 
 /*about css  */
@@ -1415,6 +1581,12 @@ h4 {
     background-color: #19e273;
 }
 
+@media (max-width: 480px) {
+    footer {
+        height: 100vh;
+    }
+}
+
 
 /* footer css  */
 
@@ -1565,42 +1737,48 @@ section {
 }
 
 
-/* online_admission  */
+/*------------------------------------------------------------
+# online_admission 
+--------------------------------------------------------------*/
 
 .Online_admission {
     display: flex;
-    height: 100vh;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
 
 .Online_admission .container {
-    max-width: 700px;
+    max-width: 95%;
     width: 100%;
-    background: #fff;
-    padding: 20px 30px;
-    border-radius: 5px;
+    background: rgb(248, 246, 246);
+    padding: 25px 30px;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
-.Online_admission .container .title {
-    font-size: 50px;
+.Online_admission .container .online_title {
+    font-size: 45px;
     font-weight: 500;
     position: relative;
+    text-align: center;
+    text-transform: capitalize;
 }
 
-.Online_admission .container .title::before {
-    content: "";
+.Online_admission .container .online_title::before {
+    content: '';
     position: absolute;
+    left: 15;
+    bottom: 0;
     height: 3px;
-    width: 30%;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    width: 34%;
+    background: linear-gradient(135deg, #16e616, #19e273);
 }
 
 .Online_admission .container form .user-details {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 20px 0 12px 0;
 }
 
 .Online_admission .container form .user-details .input-box {
@@ -1608,10 +1786,28 @@ section {
     width: calc(100%/2 - 20px);
 }
 
+.Online_admission .container form .user-details .combo-box {
+    margin: 20px 0 12px 0;
+    width: calc(100%/1 - 20px);
+}
+
+form .user-details .input-box select {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 25px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
 .Online_admission .container form .user-details .input-box .details {
     font-weight: 500;
     margin-bottom: 5px;
     display: block;
+    font-size: 30px
 }
 
 form .user-details .input-box input {
@@ -1632,7 +1828,7 @@ form .user-details .input-box input {
 }
 
 form .gender-details .gender-title {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 500;
 }
 
@@ -1643,10 +1839,72 @@ form .gender-details .category {
     justify-content: space-between;
 }
 
-form .gender-details .category label {}
+form .gender-details .category label {
+    display: flex;
+    align-items: center;
+}
 
 form .gender-details .category .dot {
     height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked~.category label .one,
+#dot-2:checked~.category label .two,
+#dot-3:checked~.category label .three {
+    border-color: #d9d9d9;
+    background-color: #14d732;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+form .button {
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    border: none;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #16e616, #19e273);
+}
+
+form .button input:hover {
+    background: linear-gradient(-135deg, #16e616, #19e273);
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width:480px) {
+    .Online_admission .container {
+        max-width: 100%;
+    }
+    .Online_admission .container form .user-details .input-box {
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    form .gender-details .category {
+        width: 100%;
+    }
+    .Online_admission .container form .user-details {
+        max-width: 300px;
+        overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar {
+        width: 0;
+    }
 }
 
 

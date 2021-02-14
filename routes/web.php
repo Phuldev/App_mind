@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Online_admController;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,6 +55,11 @@ Route::get('/contact', function () {
 Route::get('/Online Admission',function(){
     return view('online_admission');
 });
+// Route::get('/Online',function(){
+//     return view('./emails/online');
+// });
 
 
 Route::post('/send-message',[ContactController::class,'sendEmail'])->name('contact.send');
+
+Route::post('/Register',[Online_admController::class,'sendEmail'])->name('online.send');

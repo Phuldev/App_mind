@@ -94,10 +94,7 @@
                         <div class="form-group">
                             <label class="control-label"> Select Course <span class="required">*</span></label>
                             <div class="select-drop">
-                                <select class="form-control online" title=""
-                                    onkeyup="if (!window.__cfRLUnblockHandlers) return false; resetError($(this))"
-                                    id="" required name=""
-                                    data-cf-modified-571e1a693962bed716156702-="">
+                                <select class="online">
                                     <option value="python">Python With Django Frame Work</option>
                                     <option value="php">PHP With Lavavel & CI Frame Work</option>
                                     <option value="digital_marketing">Digital Marketing</option>

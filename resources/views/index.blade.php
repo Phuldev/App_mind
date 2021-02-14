@@ -1,7 +1,7 @@
 @extends('layout.master')
 @section('title','home')
 @section('content')
-{{-- About content  --}}
+{{-- Home page  --}}
     <!-- services header  -->
     <div class="demo_our">
         <div class="our_ser_demo">
@@ -196,36 +196,20 @@
     <!-- card  -->
 
     <!-- why us  -->
-    <section class="about-section ">
-        <div class="">
-            <div class="inner-container" data-aos="fade-in" data-aos-duration="1000">
-                <h1 data-aos="zoom-in-up" data-aos-duration="1000">Why&nbsp;<span>Choose us</span></h1>
-                <div class="about-skills">
-                    <span data-aos="zoom-in-up" data-aos-duration="1000">
-                        <li>web design</li>
-                    </span>
-                    <span data-aos="zoom-in-up" data-aos-duration="2000">
-                        <li>mobile development</li>
-                    </span>
-                    <span data-aos="zoom-in-up" data-aos-duration="3000">
-                        <li>software development</li>
-                    </span>
-                </div>
-                <br>
-                <p class="about-text" data-aos="zoom-in-up" data-aos-duration="1000">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laborum vel illum temporibus saepe?
-                    Libero sed aut accusamus delectus neque. Nam maiores ipsam libero quasi officia asperiores, dolores
-                    laudantium culpa?
-                </p>
-                <div class="why_btn animate__animated animate__bounceOut  animate__delay-1s animate__infinite 	infinite"
-                    data-aos="zoom-in-up" data-aos-duration="1000">
-                    <button type="submit" class="btn">
-                        <h5 data-aos="zoom-in-up" data-aos-duration="1000">Read<span>More</span></h5>
-                    </button>
-                </div>
-            </div>
-        </div>
+    <section class="why-main">
+        <section class="services_why-section">
 
+            <div class="services_why" data-aos="fade-in" data-aos-duration="1000">
+                <h1 data-aos="zoom-in-up" data-aos-duration="1000">why&nbsp;<span>us ?</span> </h1>
+                <div class="text">
+                    <li><span>web design</span></li>
+                    <li><span>web design</span></li>
+                    <li><span>web design</span></li>
+                </div>
+                <div class="text-1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio hic nesciunt nemo.</p>
+                </div>
+        </section>
     </section>
     <!-- why us  -->
     <!-- about us  -->
@@ -396,7 +380,7 @@
     </section>
     <!-- Testimonial -->
     <!-- ======= Course detail Section ======= -->
-    <section id="faq" class="faq section-bg">
+    {{-- <section id="faq" class="faq section-bg">
         <div class="container">
 
             <div class="section-title">
@@ -839,7 +823,7 @@
             </div>
 
         </div>
-    </section><!-- End F.A.Q Section -->
+    </section><!-- End F.A.Q Section --> --}}
     <!-- contact -->
     <section class="contacT" id="contAct">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -952,5 +936,5 @@
      <a href="" class="back-to-top"><i class="fa fa-arrow-up"></i></a>
     <!-- footer -->
 
-{{-- About content  --}}
+{{-- Home Page  --}}
 @endsection
