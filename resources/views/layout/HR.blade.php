@@ -1,5 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>
+        .nav-menu {
+    z-index: 12 !important;
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    font-size: 400px;
+    background: rgba(0, 0, 0, 0.2) !important;
+    /* opacity: 0.2; */
+    height:10%;
+}
+
+
+/* top-bar css  */
+
+.top-bar span {
+    font-size: 15px;
+    padding: 1px 5px;
+    font-weight: bold;
+}
+
+.top-bar span a {
+    text-decoration: none;
+    color: #ffff!important;
+}
+    </style>
 
 <head>
     <meta charset="UTF-8">
@@ -24,6 +50,7 @@
 
 <body>
     <header id="">
+
         <!-- top nav  -->
         <section class="p-2 bg-success">
 
@@ -65,7 +92,7 @@
         <!-- top nav  -->
 
         <!-- nav bar  -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-menu">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-menu fixed-top">
             <div class="container">
                 <a class="navbar-brand text-success" style="font-weight:bold;font-size:25px" href="#"><img
                         src="../image/logo_with_out_name.png" height="50px" witdh="50px" alt="">&nbsp;MindRisers</a>
@@ -102,58 +129,28 @@
             </div>
         </nav>
         <!-- nav bar  -->
-        <!-- slider_banner  -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            {{-- <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol> --}}
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="../image/programer.jpg" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="animate__animated animate__slideInLeft  animate__delay-1s animate__repeat-1">IT
-                            Trainings</h5>
-                        <p class="animate__animated animate__zoomInLeft  animate__delay-1s animate__repeat-1">Lorem
-                            ipsum dolor sit amet consectetur adipisicing elit. Qui, eligendi.</p>
-                        <p class="animate__animated animate__zoomIn  animate__delay-2s animate__repeat-1"><a
-                                href="#">More Info</a></p>
-                    </div>
+        <section class="hr-main text-center">
+            <div class="left-side" id="particles-js">
+                <div class="text">
+                    <p class="text-white text-uppercase">engaged with staffing</p>
+                    <h3> <span class="text-white font-weight-bolder">partnering you for your</span>
+                    human resource require. </h3>
+                    <p >by way of us you can achievebr  <br> what you want.</p>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="../image/2.jpeg" alt="Second slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="animate__animated animate__slideInRight  animate__delay-1s animate__repeat-1">Sales
-                            and Marketing Training</h5>
-                        <p class="animate__animated animate__zoomInRight  animate__delay-1s animate__repeat-1">Lorem
-                            ipsum dolor sit amet consectetur, adipisicing elit. Beatae, eum!</p>
-                        <p class="animate__animated animate__zoomIn  animate__delay-2s animate__repeat-1"><a
-                                href="#">More Info</a></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="../image/business.jpg" alt="Third slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="animate__animated animate__flipInY  animate__delay-1s animate__repeat-1">Human
-                            Resource Placement</h5>
-                        <p class="animate__animated animate__flipInX  animate__delay-1s animate__repeat-1">Lorem ipsum
-                            dolor sit amet consectetur adipisicing elit. Quas, ipsa.</p>
-                        <p class="animate__animated animate__zoomInUp  animate__delay-2s animate__repeat-1"><a
-                                href="#">More Info</a></p>
-                    </div>
-                </div>
+                <a href="../job Provider"><input type="submit" value="Learn More" class="btn btn-danger "> </a>
+        
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </header>
+            <div class="right-side w-50">
+                <img src="../image/workers.png" alt="">
+            </div>
+        
+        </section>
+
+
+
+  
+
+
 
     @yield('content')
     <!-- footer -->

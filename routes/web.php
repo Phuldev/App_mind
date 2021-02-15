@@ -55,8 +55,14 @@ Route::get('/contact', function () {
 Route::get('/Online Admission',function(){
     return view('online_admission');
 });
-// Route::get('/Online',function(){
-//     return view('./emails/online');
+Route::get('/Human Resource',function(){
+    return view('humanR');
+});
+Route::get('/job Provider',function(){
+    return view('landing');
+});
+// Route::get('/HR',function(){
+//     return view('.//online');
 // });
 
 

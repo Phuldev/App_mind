@@ -23,6 +23,7 @@ header {
     font-size: 600px;
     background: rgba(0, 0, 0, 0.2) !important;
     /* opacity: 0.2; */
+    height: 10%;
 }
 
 
@@ -1582,7 +1583,7 @@ h4 {
 }
 
 @media (max-width: 480px) {
-    footer {
+    .footer {
         height: 100vh;
     }
 }
@@ -1909,3 +1910,40 @@ form .button input:hover {
 
 
 /* online_admission  */
+
+
+/*************************************
+Human Resource
+**************************************/
+
+.hr-main {
+    display: flex;
+}
+
+#particles-js {
+    background: linear-gradient(135deg, #16e616, #19e273);
+    width: 60%;
+    height: 90vh;
+}
+
+.hr-main .left-side .text {
+    position: relative;
+    top: 100px;
+    left: -80px;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.hr-main .left-side .text h3 {
+    font-size: 34px;
+    color: #daf10a;
+}
+
+.hr-main .left-side input {
+    position: relative;
+    top: 100px;
+    left: -100px;
+    width: 30%;
+    text-transform: capitalize;
+    font-size: 25px;
+}

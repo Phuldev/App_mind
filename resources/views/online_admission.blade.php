@@ -1,5 +1,6 @@
 @extends('layout.master')
 @section('title', 'online_admission')
+
 @section('content')
 {{-- online_admission --}}
     <section class="Online_admission" stle="background-image: url(../image/air.png);background-repeat:no-repeat;background-position: center;">

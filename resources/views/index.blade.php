@@ -893,9 +893,9 @@
                             to be a bridge between the skilled graduates and to the business that seek them.</p>
                         <ul class="soCiaL">
                             <li><a href="https://www.facebook.com/MindRisersConsortium"><i
-                                        class="fab fa-facebook text-info"></i></a></li>
+                                        class="fab fa-facebook text-#1877f2"></i></a></li>
                             <li><a href="https://www.instagram.com/tech.mindrisers/"><i
-                                        class="fab fa-instagram text-danger"></i></a></li>
+                                        class="fab fa-instagram text-#da5663"></i></a></li>
                             <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
                             <li><a href="https://www.linkedin.com/company/mindrisers/?viewAsMember=true"><i
                                         class="fab fa-linkedin text-info"></i></a></li>
