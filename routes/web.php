@@ -58,12 +58,15 @@ Route::get('/Online Admission',function(){
 Route::get('/Human Resource',function(){
     return view('humanR');
 });
-Route::get('/job Provider',function(){
+Route::get('/search',function(){
     return view('landing');
 });
-// Route::get('/HR',function(){
-//     return view('.//online');
-// });
+Route::get('/admin', function () {
+    return view('admin.dashboard');
+});
+Route::get('/job',function(){
+    return view('job_page');
+});
 
 
 Route::post('/send-message',[ContactController::class,'sendEmail'])->name('contact.send');

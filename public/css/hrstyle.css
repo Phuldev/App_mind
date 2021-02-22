@@ -407,7 +407,8 @@ header {
 
 /* services css */
 
-.icon_services {
+
+/* .icon_services {
     font-size: 50px;
     margin: 10px;
     color: hsl(120, 85%, 68%)
@@ -442,7 +443,7 @@ header {
     position: relative;
     left: -15px;
     outline: none;
-}
+} */
 
 
 /* servicesIdu */
@@ -1965,54 +1966,55 @@ Human Resource
 search_box for HR
 ***********************************************/
 
-.search-page .header {
+
+/* .search-page .header {
     display: flex;
     justify-content: center;
     align-items: center;
     /* border: 1px solid red; */
+
+
 }
 
-.search-page .header .search-field {
+/* .search-page .header .search-field {
     height: 50px;
     padding: 10px;
     border-radius: 5px 5px 5px 5px;
-    border-color: #53ee6a;
+    border-color: #53ee6a; */
+
 }
 
-.search-field.skills {
-    width: 400px;
+/* .search-field.skills {
+    width: 400px; */
+
 }
 
-.search-page .search-btn {
+/* .search-page .search-btn {
     height: 50px;
     width: 150px;
     border: none;
     background-color: #14d732;
     border-radius: 25px 25px 25px 25px;
     color: #fff;
-    font-size: 20px;
-}
+    font-size: 20px; */
 
+}
 .search-field .subtitle a {
     font-size: 15px;
 }
-
-
+*/
 /**************************************************
 section-body
 ****************************************************/
-
 .section-body {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .section-body .sec-body-left {
     border: 1px solid red;
     width: 50%
 }
-
 .section-body .sec-body-right {
     border: 1px solid rgb(0, 255, 0);
     width: 50%;
