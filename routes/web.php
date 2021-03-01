@@ -52,11 +52,23 @@ Route::get('/course', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+Route::get('/register-post', function () {
+    return view('register_post');
+});
+Route::get('/register-want', function () {
+    return view('register_want');
+});
+Route::get('/login', function () {
+    return view('login');
+});
 Route::get('/Online Admission',function(){
     return view('online_admission');
 });
+Route::get('/reg-update-profile',function(){
+    return view('reg_update_profile');
+});
 Route::get('/Human Resource',function(){
-    return view('humanR');
+    return view('HR_Home');
 });
 Route::get('/search',function(){
     return view('landing');
@@ -67,6 +79,13 @@ Route::get('/admin', function () {
 Route::get('/job',function(){
     return view('job_page');
 });
+Route::get('/profile',function(){
+    return view('job_profile');
+});
+Route::get('/update-profile',function(){
+    return view('update-profile');
+});
+
 
 
 Route::post('/send-message',[ContactController::class,'sendEmail'])->name('contact.send');

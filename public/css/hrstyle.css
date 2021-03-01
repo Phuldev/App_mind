@@ -18,12 +18,12 @@ header {
 .nav-menu {
     z-index: 9 !important;
     position: absolute;
-    top: 6%;
+    top: 6.3%;
     width: 100%;
     font-size: 600px;
     background: rgba(0, 0, 0, 0.2) !important;
     /* opacity: 0.2; */
-    height: 10%;
+    height: 9.5%;
 }
 
 
@@ -1922,7 +1922,7 @@ Human Resource
 }
 
 #particles-js {
-    background: linear-gradient(135deg, #16e616, #19e273);
+    background: linear-gradient(135deg, #16e6169a, #0681e6);
     width: 60%;
     height: 20%;
 }

@@ -12,6 +12,9 @@
         height: 10%;
     }
 
+    .navbar-bg {
+        background-color: rgb(10, 103, 33);
+    }
 
     /* top-bar css  */
 
@@ -23,7 +26,8 @@
 
     .top-bar span a {
         text-decoration: none;
-        color: #ffff !important;
+        /* color: RGB = 10, 103, 33 !important//; */
+        color: rgb(10, 103, 33);
     }
 
 </style>
@@ -53,7 +57,7 @@
     <header id="">
 
         <!-- top nav  -->
-        <section class="p-2 bg-success">
+        <section class="p-2 navbar-bg">
 
             <div class="container">
                 <div class="row top-bar">
@@ -79,13 +83,61 @@
                             <a href="https://www.linkedin.com/company/mindrisers/?viewAsMember=true"><i
                                     class="fab fa-linkedin"></i></a>
                         </span>
-                        <span class="text-white">|</span>
-                        <span class="text-white font-weight-bolder">
-                            <a href="/Online Admission"><i class="fas fa-user">&nbsp;</i>Online Admission</a>
+                        <span class="text-white">||</span>
+                        <span>
+                            <a href="#" class="text-decoration-none"class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong"><i class="fas fa-lock">&nbsp;Login</i></a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title text-success text-center" style="font-size:25px" id="exampleModalLongTitle">Welcome back to MindRisers!</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>    
+                                            <div class="input-group mb-2 mr-sm-2">
+                                              <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="fas fa-envelope text-success"></i></div>
+                                              </div>
+                                              <input style="font-size:20px" type="email" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Enter Your E-mail">
+                                            </div>
+                                  
+                                            <div class="input-group mb-2 mr-sm-2">
+                                              <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="fas fa-lock text-success"></i></div>
+                                              </div>
+                                              <input style="font-size:20px" type="password" class="form-control" id="inlineFormInputGroupUsername2" re placeholder="Password">
+                                            </div>
+                                            <a href="/update-profile" style=" border:none; border-radius: 20px" type="submit" class="btn btn-success btn-lg btn-block" name="submit" >Login</a>
+                                            <div class="form-check text-left">
+                                                <input class="form-check-input" type="checkbox" value="" id="Remember">
+                                                <label class="form-check-label" style="font-size:20px" for="Remember">
+                                                    Remember Me 
+                                                </label>
+                                              </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            {{-- modal  --}}
                         </span>
-                        <span class="text-white font-weight-bolder">
-                            <a href="/Human Resource"><i class="">&nbsp;</i>Human Resource </a>
-                        </span>
+                        <span>
+                            <a href="#"data-toggle="modal" data-target=".bd-example-modal-lg"> <i class="fas fa-user">&nbsp;Register</i></a>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm">
+                                  <div class="modal-content">
+                                    <div class="card">
+                                        <button style="font-size:25px" class="text-uppercase btn btn-success m-2 text-center"><a href="/register-post">post a job</a></button>
+                                        <button style="font-size:25px" class="text-uppercase btn btn-warning m-2"><a href="/register-want">want a job</a></button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </span>                        
                     </div>
                 </div>
             </div>
@@ -113,18 +165,22 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/services">Services</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/course">Course</a>
-                        </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link" href="/contact">contact</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/login">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/register">Register</a>
-                        </li>
+                         {{-- <li class="nav-item">    
+                            <a class="nav-link dropdown-toggle dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" > <i class="fas fa-user text-success"></i> Register</a>
+                            <span class="sr-only">Toggle Dropdown</span>
+                            <div class="dropdown-menu" style="float:left">
+                                <div>
+                                    <button type="submit" class="btn btn-success m-2 text-white" ><a href="/register" style="text-decoration:none; color:white">Want a  job</a></button> <br>
+                                    <button type="submit" class="btn btn-warning m-2" ><a href="/register"style="text-decoration:none; color:white">Post a  job</a></button>
+                                </div>
+                            </div>
+                        </li> --}}
+
+
                     </ul>
                 </div>
             </div>
@@ -146,15 +202,17 @@
                 <button class="read-more-btn btn btn-danger ">Learn More</button>
                 {{-- <a href="#"><input type="submit" value="Learn More" class="read-more-btn btn btn-danger "> </a> --}}
             </div>
+
             <div class="right-side w-50">
-                <img src="../image/workers.png" alt="">
+                <img src="../image/workers.png" height="900px" width="600px" alt="">
             </div>
             <div>
         </section>
         {{-- headder-banner --}}
- 
+
 
         @yield('content')
+        
 
         <!-- footer -->
         <footer>
