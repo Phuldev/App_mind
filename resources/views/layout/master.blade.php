@@ -25,7 +25,7 @@
 <body>
     <header id="">
         <!-- top nav  -->
-        <section class="p-2 bg-success">
+        <section class="p-2" id="topnav"> 
 
             <div class="container">
                 <div class="row top-bar">
@@ -55,9 +55,9 @@
                         <span class="text-white font-weight-bolder">
                             <a href="/Online Admission"><i class="fas fa-user">&nbsp;</i>Online Admission</a>
                         </span>
-                        <span class="text-white font-weight-bolder">
+                        {{-- <span class="text-white font-weight-bolder">
                             <a href="/Human Resource"><i class="">&nbsp;</i>Human Resource </a>
-                        </span>
+                        </span> --}}
                     </div>
                 </div>
             </div>
@@ -103,12 +103,7 @@
         </nav>
         <!-- nav bar  -->
         <!-- slider_banner  -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            {{-- <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol> --}}
+        {{-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="../image/programer.jpg" alt="First slide">
@@ -152,10 +147,14 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-        </div>
+        </div> --}}
     </header>
 
+  <section>
     @yield('content')
+  </section>
+
+    
     <!-- footer -->
     <footer>
         <div class="footer" id="footer">
@@ -259,6 +258,7 @@
         });
 
     </script>
+
 </body>
 
 </html>

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Online_admController;
+use App\Http\Controllers\adminLoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -70,11 +71,23 @@ Route::get('/reg-update-profile',function(){
 Route::get('/Human Resource',function(){
     return view('HR_Home');
 });
+
+// admin panel setting 
+Route::get('/adminLogin',function(){
+    return view('adminLogin');
+});
+Route::get('/adminReg',function(){
+    return view('adminReg');
+});
+// admin panel setting 
 Route::get('/search',function(){
     return view('landing');
 });
 Route::get('/admin', function () {
     return view('admin.dashboard');
+});
+Route::get('/post-data', function () {
+    return view('admin.post');
 });
 Route::get('/job',function(){
     return view('job_page');

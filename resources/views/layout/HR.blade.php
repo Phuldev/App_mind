@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
+ 
     .nav-menu {
         z-index: 12 !important;
         position: absolute;
@@ -27,10 +28,11 @@
     .top-bar span a {
         text-decoration: none;
         /* color: RGB = 10, 103, 33 !important//; */
-        color: rgb(10, 103, 33);
+        color: rgb(77, 218, 112);
     }
 
 </style>
+
 
 <head>
     <meta charset="UTF-8">
@@ -147,7 +149,7 @@
         <!-- nav bar  -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-menu fixed-top">
             <div class="container">
-                <a class="navbar-brand text-success" style="font-weight:bold;font-size:25px" href="#"><img
+                <a class="navbar-brand text-success" style="font-weight:bold;font-size:25px" href="/Human Resource"><img
                         src="../image/logo_with_out_name.png" height="50px" witdh="50px" alt="">&nbsp;MindRisers</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -160,14 +162,14 @@
                             <a class="nav-link" href="/home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/about">About</a>
+                            <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/services">Services</a>
+                            <a class="nav-link" href="#">Services</a>
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link" href="/contact">contact</a>
+                            <a class="nav-link" href="#">contact</a>
                         </li>
                          {{-- <li class="nav-item">    
                             <a class="nav-link dropdown-toggle dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" > <i class="fas fa-user text-success"></i> Register</a>
@@ -187,31 +189,31 @@
         </nav>
         <!-- nav bar  -->
         {{-- headder_banner --}}
-        <section class="hr-main text-center">
+        {{-- <section class="hr-main text-center">
             <div class="left-side" id="particles-js">
                 <div class="text">
                     <p class="text-white text-uppercase">engaged with staffing</p>
                     <h3> <span class="text-white font-weight-bolder">partnering you for your</span>
                         human resource require. </h3>
-                    {{-- <p >by way of us you can achievebr  <br> what you want.</p> --}}
                     <p class="tExt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Quisquam consequatur <span class="readtExt"> blanditiis voluptas asperiores corporis,
                             voluptatum natus nisi Lorem ipsum dolor sit amet consectetur adipisicing elit. In
                             praesentium, porro omnis quisquam nobis reiciendis. tenetur magni facere?</span></p>
                 </div>
                 <button class="read-more-btn btn btn-danger ">Learn More</button>
-                {{-- <a href="#"><input type="submit" value="Learn More" class="read-more-btn btn btn-danger "> </a> --}}
             </div>
 
             <div class="right-side w-50">
                 <img src="../image/workers.png" height="900px" width="600px" alt="">
             </div>
             <div>
-        </section>
+        </section>  --}}
         {{-- headder-banner --}}
 
 
+     <section class="p-5">
         @yield('content')
+     </section>
         
 
         <!-- footer -->

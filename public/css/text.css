@@ -7,7 +7,6 @@
 
 header {
     width: 100%;
-    height: 100vh;
     background-color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)) !important;
     background-size: 100% 100%;
 }
@@ -17,11 +16,12 @@ header {
 
 .nav-menu {
     z-index: 9 !important;
+    overflow: hidden;
     position: absolute;
-    top: 6%;
+    top: 6.3%;
     width: 100%;
     font-size: 600px;
-    background: rgba(0, 0, 0, 0.2) !important;
+    background: #02270b!important;
     /* opacity: 0.2; */
     height: 10%;
 }
@@ -29,10 +29,18 @@ header {
 
 /* top-bar css  */
 
+#topnav {
+    background-color: rgb(10, 103, 33);
+    /* position: fixed;
+    top: 6; */
+    width: 100%;
+}
+
 .top-bar span {
     font-size: 15px;
     padding: 1px 5px;
     font-weight: bold;
+    /* top: 6; */
 }
 
 .top-bar span a {
@@ -44,16 +52,35 @@ header {
 /* top-bar media query  */
 
 @media only screen and (max-width:480px) {
-    .top-bar span {
+    .top-bar .text-left span {
         display: none;
+    }
+    .top-bar .text-right span {
+        /* text-align: center; */
+        padding: 5px;
+    }
+    .top-bar {
+        width: 100%;
+    }
+    .row {
+        /* display: -ms-flexbox; */
+        display: block;
+        /* -ms-flex-wrap: wrap; */
+        /* flex-wrap: wrap; */
+        /* margin-right: -18px; */
+        /* margin-left: -15px; */
     }
     .nav-menu {
         /* z-index: 9 !important; */
         position: absolute;
-        top: 0%;
+        top: 39.9px;
         width: 100%;
         background: rgba(0, 0, 0, 0.2) !important;
         /* opacity: 0.2; */
+    }
+    .carousel {
+        position: relative;
+        height: 44vh;
     }
     .carousel-inner {
         width: 100%;
@@ -61,24 +88,15 @@ header {
     }
 }
 
-@media only screen and (max-width:960px) {
+@media only screen and (max-width:480) {
     .nav-menu {
         z-index: 9 !important;
         position: absolute;
-        top: 0%;
+        top: 6.3%;
         width: 100%;
         font-size: 600px;
         background: rgba(0, 0, 0, 0.2) !important;
         /* opacity: 0.2; */
-    }
-    .top-bar span {
-        display: none;
-    }
-}
-
-@media only screen and (max-width:720px) {
-    .top-bar span {
-        display: none;
     }
 }
 
@@ -123,7 +141,7 @@ header {
 
 .carousel-caption a {
     text-transform: uppercase;
-    background: #10d441;
+    background: #02380f;
     padding: 10px 30px;
     display: inline-block;
     color: #fff;
@@ -166,10 +184,6 @@ header {
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
     color: rgb(165, 224, 26)!important;
-}
-
-.w-100 {
-    height: 100vh;
 }
 
 
@@ -256,7 +270,7 @@ header {
     width: 200px;
     height: 2px;
     margin: 0px auto;
-    background: #16e616;
+    background: #0a6721;
 }
 
 .services-container {
@@ -272,15 +286,15 @@ header {
     text-align: center;
     background-color: rgb(245, 238, 238);
     cursor: pointer;
-    border: 3px solid hsl(130, 97%, 39%);
+    border: 3px solid #0a6721;
 }
 
 .services-icon {
     display: inline-block;
     width: 70px;
     height: 70px;
-    border: 3px solid hsl(130, 97%, 39%);
-    color: hsl(130, 97%, 39%);
+    border: 3px solid #0a6721;
+    color: #0a6721;
     transform: rotate(45deg);
     margin-top: -40px;
     margin-bottom: 30px;
@@ -299,7 +313,7 @@ header {
 }
 
 .services-box:hover .services-icon {
-    background-color: hsl(130, 97%, 39%);
+    background-color: #0a6721;
     transition: 0.5s;
     color: #fff;
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
@@ -355,15 +369,15 @@ header {
         display: inline-block;
         width: 70px;
         height: 70px;
-        border: 3px solid hsl(130, 97%, 39%);
-        color: hsl(130, 97%, 39%);
+        border: 3px solid #0a6721;
+        color: #0a6721;
         transform: rotate(45deg);
         margin-top: -40px;
         margin-bottom: 30px;
         transition: 0.3s linear;
         position: relative;
         top: -7px;
-        left: 37%;
+        left: 42%;
         text-align: match-parent;
         background-color: #f4f8f7;
     }
@@ -374,7 +388,7 @@ header {
         text-align: center;
         background-color: rgb(245, 238, 238);
         cursor: pointer;
-        border: 3px solid hsl(130, 97%, 39%);
+        border: 3px solid #0a6721;
     }
     .services-section {
         width: 100%;
@@ -393,7 +407,7 @@ header {
     .our_ser_demo {
         width: 30%;
         height: 300px;
-        background-color: #89f074a1;
+        background-color: #0a6721;
         background-size: 500px;
         position: relative;
         top: 230.5px;
@@ -410,7 +424,7 @@ header {
 .icon_services {
     font-size: 50px;
     margin: 10px;
-    color: hsl(120, 85%, 68%)
+    color: #0a6721;
 }
 
 .card-title {
@@ -424,7 +438,7 @@ header {
 }
 
 .card:hover {
-    background-color: #10d441;
+    background-color: #0a6721;
     color: #fff;
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
 }
@@ -438,7 +452,7 @@ header {
     width: 100px;
     height: 5px;
     margin: 0px auto;
-    color: #16e616;
+    color: #0a6721;
     position: relative;
     left: -15px;
     outline: none;
@@ -469,7 +483,7 @@ header {
 .services_idu {
     width: 55%;
     float: right;
-    background-color: #5ec54acc;
+    background-color: #0a6721;
     padding: 170px;
     box-shadow: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
@@ -548,7 +562,7 @@ header {
     .our_ser_demo {
         width: 50%;
         height: 290px;
-        background-color: #89f074a1;
+        background-color: #0a6721;
         background-size: 500px;
         padding: 50px;
         position: relative;
@@ -645,7 +659,7 @@ header {
     .services_idu {
         width: 50%;
         float: right;
-        background-color: #19e273;
+        background-color: #0a6721;
         padding: 35px;
         box-shadow: rgba(0, 0, 0, 0.3);
         border-radius: 0px;
@@ -710,7 +724,7 @@ header {
     .our_ser_demo {
         width: 100%;
         height: 0px;
-        background-color: #03c423;
+        background-color: #0a6721;
         text-align: center;
         position: relative;
         top: 16px;
@@ -751,7 +765,7 @@ header {
 .services_why {
     width: 55%;
     float: left;
-    background-color: #5ec54acc;
+    background-color: #0a6721;
     padding: 100px;
     box-shadow: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
@@ -827,7 +841,7 @@ header {
     .our_ser_demo {
         width: 50%;
         height: 290px;
-        background-color: #89f074a1;
+        background-color: #0a6721;
         background-size: 500px;
         padding: 50px;
         position: relative;
@@ -873,7 +887,7 @@ header {
     .our_ser_demo {
         width: 50%;
         height: 290px;
-        background-color: #89f074a1;
+        background-color: #0a6721;
         background-size: 500px;
         padding: 50px;
         position: relative;
@@ -929,7 +943,7 @@ header {
     .our_ser_demo {
         width: 100%;
         height: 180px;
-        background-color: #89f074a1;
+        background-color: #0a6721;
         text-align: center;
         position: relative;
         top: 50px;
@@ -957,7 +971,7 @@ header {
     #card .card {
         margin: 5px;
         position: relative;
-        top: -74px;
+        top: 0px;
     }
     .services_idu-section {
         background-size: 50%;
@@ -965,12 +979,12 @@ header {
         overflow: hidden;
         padding: 0 0;
         position: relative;
-        top: -75px;
+        top: 0px;
     }
     .services_idu {
         width: 50%;
         float: right;
-        background-color: #19e273;
+        background-color: #0a6721;
         padding: 35px;
         box-shadow: rgba(0, 0, 0, 0.3);
         border-radius: 0px;
@@ -1035,10 +1049,10 @@ header {
     .our_ser_demo {
         width: 100%;
         height: 0px;
-        background-color: #03c423;
+        background-color: #0a6721;
         text-align: center;
         position: relative;
-        top: 16px;
+        top: 0px;
     }
     .our_ser_demo h3 {
         font-size: 25px;
@@ -1125,7 +1139,7 @@ header {
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
-    background-color: #19e273;
+    background-color: #0a6721;
     letter-spacing: 1px;
     font-family: sans-serif;
     text-transform: uppercase;
@@ -1133,7 +1147,7 @@ header {
 }
 
 .conTent .button a:hover {
-    background: #0a98c0;
+    background: #0a6721;
     transition: 2s ease;
     color: #fff;
 }
@@ -1143,14 +1157,14 @@ header {
 }
 
 .conTent .sociAl a {
-    color: #10d441;
+    color: #0a6721;
     font-size: 24px;
     padding: 0px 5px;
     font-family: sans-serif;
 }
 
 .conTent .sociAl a:hover {
-    color: #19e273;
+    color: #0a6721;
 }
 
 
@@ -1192,7 +1206,7 @@ header {
 .our-team {
     width: 100%;
     height: 100vh;
-    padding: 80px 0;
+    padding: 5px 0;
     overflow: hidden;
 }
 
@@ -1208,7 +1222,7 @@ header {
 }
 
 .box:hover {
-    background: #269902;
+    background: #0a6721;
 }
 
 .box:hover p {
@@ -1262,6 +1276,15 @@ header {
     .box a img {
         border-radius: 50%;
         margin-top: 10px;
+    }
+    .carousel .item {
+        height: 300px;
+    }
+    .item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 300px;
     }
 }
 
@@ -1320,7 +1343,7 @@ header {
     width: 50%;
     display: flex;
     flex-direction: column;
-    color: #19e273;
+    color: #0a6721;
     z-index: 1;
 }
 
@@ -1332,7 +1355,7 @@ header {
 
 .contactForm h2 {
     font-size: 30px;
-    color: rgb(116, 112, 112);
+    color: #124d12;
     font-weight: 500;
     z-index: -1;
 }
@@ -1350,7 +1373,7 @@ header {
     font-size: 30px;
     margin: 10px 0;
     border: none;
-    border-bottom: 2px solid rgb(97, 95, 95);
+    border-bottom: 2px solid rgb(10, 103, 33);
     outline: none;
     resize: none;
     border-radius: 10px;
@@ -1363,14 +1386,14 @@ header {
     font-size: 16px;
     margin: 10px 0;
     pointer-events: none;
-    color: #666;
+    color: rgb(10, 103, 33);
 }
 
 .contactForm .inputBOx input:focus~span,
 .contactForm .inputBOx input:valid~span,
 .contactForm .inputBOx textarea:focus~span,
 .contactForm .inputBOx textarea:valid~span {
-    color: rgb(122, 43, 43);
+    color: rgb(10, 103, 33);
     font-size: 12px;
     transform: translateY(-25px);
     transition: 0.3 ease;
@@ -1378,7 +1401,7 @@ header {
 
 .contactForm .inputBOx input[type="submit"] {
     width: 100%;
-    background: #19e273;
+    background: #0a6721;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -1434,9 +1457,6 @@ header {
 }
 
 @media screen and (max-width:480px) {
-    .contacT {
-        padding: 50px;
-    }
     .contAiner {
         flex-direction: column;
         /* min-height: 50vh;
@@ -1466,13 +1486,14 @@ header {
     right: 0%;
     opacity: .3;
     z-index: -1;
-    background: #0bdf40 100%;
+    background: #f4f7f5 100%;
 }
 
 .footer {
     position: absolute;
     width: 100%;
-    height: 80%;
+    background-color: #0a67215e;
+    /* height: 80%; */
     /* overflow: hidden; */
 }
 
@@ -1503,7 +1524,7 @@ h4 {
 }
 
 .soCiaL li a i:hover {
-    color: #269902;
+    color: #0a6721d7;
     text-decoration: none;
 }
 
@@ -1518,7 +1539,7 @@ h4 {
 
 .footer .links li a:hover {
     text-decoration: none;
-    color: #269902;
+    color: #0a6721d7;
     z-index: 1;
 }
 
@@ -1549,7 +1570,7 @@ h4 {
 .footer .location i {
     font-size: 22px;
     display: inline-block;
-    background-color: #38f138;
+    background-color: #0a6721;
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -1573,18 +1594,18 @@ h4 {
     z-index: 99px;
     border: none;
     color: #fff;
-    background-color: #0bdf40;
+    background-color: #0a6721;
     padding: 10px;
     border-radius: 10px;
 }
 
 #myBtn:hover {
-    background-color: #19e273;
+    background-color: #0a6721d7;
 }
 
 @media (max-width: 480px) {
     .footer {
-        height: 100vh;
+        background-color: #0a67215e;
     }
 }
 
@@ -1597,12 +1618,13 @@ h4 {
   --------------------------------------------------------------*/
 
 section {
-    padding: 60px 0;
+    /* padding: 60px 0; */
     overflow: hidden;
 }
 
 .section-bg {
-    background-color: #19e273;
+    background-color: #e5ebe891;
+    padding: 70px;
 }
 
 .section-title {
@@ -1663,7 +1685,7 @@ section {
     position: absolute;
     right: 0;
     left: 20px;
-    color: #14d732;
+    color: #0a6721;
 }
 
 .faq .faq-list .icon-show,
@@ -1688,7 +1710,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-    color: #14d732;
+    color: #0a6721d7;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1733,7 +1755,7 @@ section {
 
 .back-to-top:hover {
     color: #fff;
-    background: #25df3e;
+    background: #0a6721d7;
     transition: background 0.2s ease-in-out;
 }
 
@@ -1746,6 +1768,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px;
 }
 
 .Online_admission .container {
@@ -1772,7 +1795,7 @@ section {
     bottom: 0;
     height: 3px;
     width: 34%;
-    background: linear-gradient(135deg, #16e616, #19e273);
+    background: linear-gradient(135deg, #0a6721, #0a6721d7);
 }
 
 .Online_admission .container form .user-details {
@@ -1825,7 +1848,7 @@ form .user-details .input-box input {
 
 .user-details .input-box input:focus,
 .user-details .input-box input:valid {
-    border-color: #0bdf40;
+    border-color: #0a6721d7;
 }
 
 form .gender-details .gender-title {
@@ -1859,7 +1882,7 @@ form .gender-details .category .dot {
 #dot-2:checked~.category label .two,
 #dot-3:checked~.category label .three {
     border-color: #d9d9d9;
-    background-color: #14d732;
+    background-color: #0a6721;
 }
 
 form input[type="radio"] {
@@ -1880,15 +1903,18 @@ form .button input {
     font-weight: 500;
     letter-spacing: 1px;
     border-radius: 5px;
-    background: linear-gradient(135deg, #16e616, #19e273);
+    background: linear-gradient(135deg, #0a6721, #0a6721d7);
 }
 
 form .button input:hover {
-    background: linear-gradient(-135deg, #16e616, #19e273);
+    background: linear-gradient(-135deg, #0a6721d7, #0a6721);
     box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width:480px) {
+    .Online_admission {
+        padding: 15%;
+    }
     .Online_admission .container {
         max-width: 100%;
     }
@@ -2011,6 +2037,11 @@ section-body
 .section-body .sec-body-left {
     border: 1px solid red;
     width: 50%
+}
+
+.section-body .sec-body-right {
+    border: 1px solid rgb(0, 255, 0);
+    width: 50%;
 }
 
 .section-body .sec-body-right {

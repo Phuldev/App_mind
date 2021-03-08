@@ -14,13 +14,18 @@
             /* border: 1px solid rgb(51, 226, 28); */
             
         }
-
-
     </style>
     {{-- secrch box --}}
-<section class="container d-flex">
-    <input type="text" class="form-control w-75" placeholder="Search by job title">
-    <button class="btn btn-outline-success my-2 my-sm-0 m-2 text-center w-25" type="submit">Search</button>
+<section class="container">
+    <div class="input-group">
+        <div class="form-outline">
+          <input id="search-input" type="search" id="form1" class="form-control" />
+          <label class="form-label" for="form1">phuldev</label>
+        </div>
+        <button id="search-button" type="button" class="btn btn-primary">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
 </section>
     </section>
     {{-- search box --}}

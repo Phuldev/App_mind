@@ -5,6 +5,10 @@
     font-family: teko;
 }
 
+body {
+    background-color: rgba(178, 247, 201, 0.267);
+}
+
 header {
     width: 100%;
     height: 100vh;
@@ -24,6 +28,7 @@ header {
     background: rgba(0, 0, 0, 0.2) !important;
     /* opacity: 0.2; */
     height: 9.5%;
+    /* display: none; */
 }
 
 
@@ -202,7 +207,7 @@ header {
 }
 
 .demo_our {
-    background: url(../image/2.jpeg) no-repeat;
+    /* background: url(../image/2.jpeg) no-repeat; */
     height: 100vh;
     background-size: 100%;
 }

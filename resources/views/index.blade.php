@@ -2,6 +2,55 @@
 @section('title','home')
 @section('content')
 {{-- Home page  --}}
+<!-- slider_banner  -->
+ <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="../image/programer.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="animate__animated animate__slideInLeft  animate__delay-1s animate__repeat-1">IT
+                    Trainings</h5>
+                <p class="animate__animated animate__zoomInLeft  animate__delay-1s animate__repeat-1">Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Qui, eligendi.</p>
+                <p class="animate__animated animate__zoomIn  animate__delay-2s animate__repeat-1"><a
+                        href="#">More Info</a></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="../image/programer.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="animate__animated animate__slideInRight  animate__delay-1s animate__repeat-1">Sales
+                    and Marketing Training</h5>
+                <p class="animate__animated animate__zoomInRight  animate__delay-1s animate__repeat-1">Lorem
+                    ipsum dolor sit amet consectetur, adipisicing elit. Beatae, eum!</p>
+                <p class="animate__animated animate__zoomIn  animate__delay-2s animate__repeat-1"><a
+                        href="#">More Info</a></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="../image/business.jpg" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="animate__animated animate__flipInY  animate__delay-1s animate__repeat-1">Human
+                    Resource Placement</h5>
+                <p class="animate__animated animate__flipInX  animate__delay-1s animate__repeat-1">Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Quas, ipsa.</p>
+                <p class="animate__animated animate__zoomInUp  animate__delay-2s animate__repeat-1"><a
+                        href="#">More Info</a></p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
     <!-- services header  -->
     <div class="demo_our">
         <div class="our_ser_demo">
@@ -205,9 +254,36 @@
                     <li><span>web design</span></li>
                     <li><span>web design</span></li>
                     <li><span>web design</span></li>
+                    
                 </div>
                 <div class="text-1">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio hic nesciunt nemo.</p>
+                </div>
+                {{-- style why-readMore  --}}
+                <style>
+                    .why-readMore
+                    {
+                        font-size:25px;
+                    }
+                    .why-readMore a
+                    { 
+                        list-style: none;
+                        text-decoration: none;
+                        color:#ffffff;
+                        border:1px solid #fff;
+                    }
+                    .why-readMore a span
+                    { 
+                        font-size:40px;
+                        color:yellow;
+                        background-color: #0a6721;
+                    }
+                </style>
+                {{-- style why-readMore  --}}
+                <div class="text-center text-uppercase why-readMore">
+                    
+                        <a href="#">read<span>more</span></a>
+                    
                 </div>
         </section>
     </section>
@@ -268,7 +344,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-12">
                             <div class="box">
-                                <a href="#"><img src="../image/dev.jpeg" class="img-fluidi img-thumbnail" height="250px"
+                                <a href="#"><img src="../image/dev.jpeg" class="img-fluid mx-auto d-block"
                                         alt=""></a>
                                 <p class="m-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum impedit
                                     laborum fuga?</p>
@@ -278,7 +354,7 @@
                         </div>
                         <div class="col-lg-4 col-md-4 col-12">
                             <div class="box">
-                                <a href="#"><img src="../image/dev.jpeg" class="img-fluidi img-thumbnail" height="250px"
+                                <a href="#"><img src="../image/dev.jpeg" class="img-fluid mx-auto d-block"
                                         alt=""></a>
                                 <p class="m-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum impedit
                                     laborum fuga?</p>
@@ -288,81 +364,11 @@
                         </div>
                         <div class="col-lg-4 col-md-4 col-12">
                             <div class="box">
-                                <a href="#"><img src="../image/dev.jpeg" class="img-fluidi img-thumbnail" height="250px"
+                                <a href="#"><img src="../image/dev.jpeg" class="img-fluid mx-auto d-block"
                                         alt=""></a>
                                 <p class="m-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum impedit
                                     laborum fuga?</p>
                                 <h1>sandesh tamang</h1>
-                                <h2 class="text-white">full stack</h2>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <div class="box">
-                                <a href="#"><img src="../image/dev.jpeg" class="img-fluidi img-thumbnail" height="250px"
-                                        alt=""></a>
-                                <p class="m-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum impedit
-                                    laborum fuga?</p>
-                                <h1>phuldev mandal</h1>
-                                <h2 class="text-white">full stack</h2>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <div class="box">
-                                <a href="#"><img src="../image/dev.jpeg" class="img-fluidi img-thumbnail" height="250px"
-                                        alt=""></a>
-                                <p class="m-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum impedit
-                                    laborum fuga?</p>
-                                <h1>phuldev mandal</h1>
-                                <h2 class="text-white">full stack</h2>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <div class="box">
-                                <a href="#"><img src="../image/dev.jpeg" class="img-fluidi img-thumbnail" height="250px"
-                                        alt=""></a>
-                                <p class="m-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum impedit
-                                    laborum fuga?</p>
-                                <h1>phuldev mandal</h1>
-                                <h2 class="text-white">full stack</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <div class="box">
-                                <a href="#"><img src="../image/dev.jpeg" class="img-fluidi img-thumbnail" height="250px"
-                                        alt=""></a>
-                                <p class="m-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum impedit
-                                    laborum fuga?</p>
-                                <h1>phuldev mandal</h1>
-                                <h2 class="text-white">full stack</h2>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <div class="box">
-                                <a href="#"><img src="../image/dev.jpeg" class="img-fluidi img-thumbnail" height="250px"
-                                        alt=""></a>
-                                <p class="m-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum impedit
-                                    laborum fuga?</p>
-                                <h1>phuldev mandal</h1>
-                                <h2 class="text-white">full stack</h2>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <div class="box">
-                                <a href="#"><img src="../image/dev.jpeg" class="img-fluidi img-thumbnail" height="250px"
-                                        alt=""></a>
-                                <p class="m-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum impedit
-                                    laborum fuga?</p>
-                                <h1>phuldev mandal</h1>
                                 <h2 class="text-white">full stack</h2>
                             </div>
                         </div>
@@ -378,452 +384,7 @@
             </a>
         </div>
     </section>
-    <!-- Testimonial -->
-    <!-- ======= Course detail Section ======= -->
-    {{-- <section id="faq" class="faq section-bg">
-        <div class="container">
-
-            <div class="section-title">
-                <h2 data-aos="fade-up">IT Course Details</h2>
-            </div>
-
-            <div class="faq-list">
-                <ul>
-                    <li data-aos="fade-up">
-                        <a data-toggle="collapse" href="#faq-list-1" class="collapsed"><i><img src="../image/course.png"
-                                    width="30px" height="30px"></i> Python Course Details <i
-                                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-1" class="collapse" data-parent=".faq-list">
-                            <p>
-                                -Fundamentals of Python</br>
-                                -Object Oriented Programming with Python</br>
-                                -Data Structure and Algorithms</br>
-                                -Network programming with Python</br>
-                                -Database Programming (MySQL)</br>
-                                -CGI programming with Python</br>
-                                -Numpy</br>
-                                -Pandas</br>
-                                -GUI programming with Python-TKInter</br>
-                                -Introduction to web development</br>
-                                -Django Web Framework</br>
-                                -Restful Api</br>
-                                -DevOps
-                                </br>
-                                <b>*Note: Comprehensive course details will be available upon request.</b>
-                                </br>
-                            </p>
-                        </div>
-                    </li>
-
-                    <li data-aos="fade-up" data-aos-delay="100">
-                        <a data-toggle="collapse" href="#faq-list-2" class="collapsed"><i><img src="../image/course.png"
-                                    width="30px" height="30px"></i> Android/ iOS (Cross-platform included)<i
-                                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-2" class="collapse" data-parent=".faq-list">
-                            <p>
-                                -Introduction to Android/iOS/Flutter</br>
-                                -Getting Started with Android/iOS/Flutter</br>
-                                -Android/iOS/Flutter System Overview</br>
-                                -Android/iOS/Flutter User Interface (UI)</br>
-                                -More UI Elements</br>
-                                -Media Handling</br>
-                                -Data Handling and Content Providers</br>
-                                -Services, Broadcast Receivers, and Intent Filters</br>
-                                -Google API</br>
-                                -Web Services in Android/iOS/Flutter</br>
-                                -Wireless and Networking</br>
-                                -Telephony, SMS, and VoIP</br>
-                                -Sensors</br>
-                                -Google Play/app Store</br>
-                                -Android Studio/Xcode/vsCode</br>
-                                -Material Design</br>
-                                -Android/iOS/Flutter Interface Definition Language
-                                </br>
-                                <b>*Note: Comprehensive course details will be available upon request.</b>
-                                </br>
-
-                            </p>
-                        </div>
-                    </li>
-
-                    <li data-aos="fade-up" data-aos-delay="" 30px"0">
-                        </i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed"><i><img
-                                    src="../image/course.png" width="30px" height="30px"></i> Java (hibernate/Spring) <i
-                                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-3" class="collapse" data-parent=".faq-list">
-                            <p>
-                                -Fundamentals of Java </br>
-                                -OOP in Java </br>
-                                -Object Design and Programming </br>
-                                -String Object and Regular Expressions </br>
-                                -Interfaces in Java </br>
-                                -Java Exception on Handling </br>
-                                -Java Collection ons API </br>
-                                -Java Date and Time API </br>
-                                -Design Pattern </br>
-                                -Threads in Java </br>
-                                </br>
-                                <b>
-                                    Spring Framework
-                                </b>
-                                </br>
-                                -Introduction on to Spring Framework </br>
-                                -Advantage of using Spring framework </br>
-                                -Dependency Injection </br>
-                                -Spring Configurations(XML) </br>
-                                -Spring Annotations </br>
-                                -Model, View, Controller </br>
-                                -RequestParam, RequestMapping </br>
-                                -Methods : GET, POST, UPDATE, DELETE </br>
-                                </br>
-                                <b>
-                                    Spring REST
-                                </b>
-                                </br>
-                                -Overview </br>
-                                -JSON Data Binding </br>
-                                -Rest Controller </br>
-                                -POJO integration JSON </br>
-                                -Spring REST Database Project </br>
-                                -Spring AOP</br>
-                                -Introduction, Scope </br>
-                                -Aspect, Join Point, Pointcut</br>
-
-                                </br>
-                                <b>
-                                    *Course content for Hibernate available on request
-                                </b>
-                            </p>
-                        </div>
-                    </li>
-
-                    <li data-aos="fade-up" data-aos-delay="300">
-                        <a data-toggle="collapse" href="#faq-list-4" class="collapsed"><i><img src="../image/course.png"
-                                    width="30px" height="30px"></i> PHP with its desired frameworks <i
-                                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-4" class="collapse" data-parent=".faq-list">
-                            <p>
-                                -The PHP programming language </br>
-                                -What is programming? </br>
-                                -Variables, Syntax and expressions </br>
-                                -Data Structure (Array) </br>
-                                -Api</br>
-                                -Loop </br>
-                                -Functions </br>
-                                -Some useful Built-in functions </br>
-                                -Object Oriented Concept in PHP </br>
-                                -Examples of Popular Framework and how they works </br>
-                                -What is API and how to handle it? </br>
-                                -Git </br>
-                                -GitHub and Git (Differences and Usage) </br>
-                                </br>
-                                <b>
-                                    *Course content for framework available on request
-                                </b>
-
-                            </p>
-                        </div>
-                    </li>
-
-                    <li data-aos="fade-up" data-aos-delay="400">
-                        <a data-toggle="collapse" href="#faq-list-5" class="collapsed"><i><img src="../image/course.png"
-                                    width="30px" height="30px"></i> .net <i class="bx bx-chevron-down icon-show"></i><i
-                                class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-5" class="collapse" data-parent=".faq-list">
-                            <p>
-                                <b>
-                                    Module 1: Object Oriented Programming Concepts
-                                </b>
-                                <br>
-                                -Introduction to Object-Oriented Programming <br>
-                                -Object-oriented Design <br>
-                                -Classes and Methods <br>
-                                -Abstraction and Inheritance <br>
-                                -Multiple Inheritance and Interfaces <br>
-                                -Polymorphism <br>
-                                -Overloading <br>
-                                -Overriding <br>
-                                -Polymorphic Variable <br>
-                                -Generics <br>
-                                -Frameworks and Reflection <br>
-                                -Patterns <br>
-                                <br>
-                                <b>
-                                    Module 2: Application Programming (C#)
-
-                                </b>
-                                </br>
-                                -Getting Started with C# </br>
-                                -Variables and Data Types in C# </br>
-                                -Statements and Operators </br>
-                                -C# Programming Constructs </br>
-                                -Arrays </br>
-                                -Classes and Methods </br>
-                                -Inheritance and Polymorphism </br>
-                                -Abstract Classes and Interfaces </br>
-                                -Properties and Indexers </br>
-                                -Namespaces </br>
-                                -Exception Handling </br>
-                                -Events, Delegates, and Collections </br>
-                                -Generics and Iterators </br>
-                                -Advanced Methods and Types </br>
-                                -Advanced Concepts in C# </br>
-                                -Encrypting and Decrypting Data </br>
-                                </br>
-                                <b>
-                                    Module 3: Web Programming using ASP .NET MVC
-
-
-                                </b>
-
-                                </br>
-                                -Introduction to ASP.NET MVC </br>
-                                -Controllers in ASP.NET MVC </br>
-                                -Views in ASP.NET MVC </br>
-                                -Models in ASP.NET MVC </br>
-                                -Data Validation and Annotation </br>
-                                -Data Access </br>
-                                -Consistent Styles and Layouts </br>
-                                -Responsive Pages </br>
-                                -State Management and Optimization </br>
-                                -Authentication and Authorization </br>
-                                -Security </br>
-                                -Globalization </br>
-                                -Debugging and Monitoring </br>
-                                -Advanced Concepts of ASP.NET MVC </br>
-                                -Testing and Deploying </br>
-                                </br>
-                                <b>
-                                    Module 4: Agile System Development Life Cycle for Software Projects
-
-
-
-                                </b>
-
-                                </br>
-                                -Software Characteristics </br>
-                                -Software Development Life Cycle </br>
-                                -Linear Process Models </br>
-                                -Iterative Process Models </br>
-                                -Specialized Process Models </br>
-                                -Agile Software Development - I </br>
-                                -Agile Software Development - II </br>
-                                -Extreme Programming </br>
-                                -Scrum </br>
-                                -Agile Process Models - I </br>
-                                -Agile Process Models - II </br>
-                                -Comparing Agile with Traditional Models </br>
-                                -Introduction to DevOps and Configuration Management </br>
-                                -Continuous Integration and Delivery in DevOps </br>
-
-                                </br>
-                                <b>*Note: Comprehensive course details will be available upon request.</b>
-                                </br>
-
-
-
-
-                            </p>
-                        </div>
-                    </li>
-
-                    <li data-aos="fade-up" data-aos-delay="400">
-                        <a data-toggle="collapse" href="#faq-list-6" class="collapsed"><i><img src="../image/course.png"
-                                    width="30px" height="30px"></i> CCNA/CCNP <i
-                                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-6" class="collapse" data-parent=".faq-list">
-                            <p>
-                                -Network Fundamentals </br>
-                                -Introduction to Network Architecture and Protocols </br>
-                                -Data Transmission, Transmission Media, and Data Encoding </br>
-                                -Datalink Control </br>
-                                -Switching </br>
-                                -LAN Systems </br>
-                                -Bridges </br>
-                                -IP </br>
-                                -TCP </br>
-                                -Traffic Management </br>
-                                -LAN SWITCHING TECHNOLOGIES </br>
-                                -IP ROUTING TECHNOLOGIES </br>
-                                </br>
-                                <b>*Note: CCNP course details will be available upon request.</b>
-                            </p>
-                        </div>
-                    </li>
-
-                    <li data-aos="fade-up" data-aos-delay="400">
-                        <a data-toggle="collapse" href="#faq-list-7" class="collapsed"><i><img src="../image/course.png"
-                                    width="30px" height="30px"></i> Oracle/DBMS <i
-                                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-7" class="collapse" data-parent=".faq-list">
-                            <p>
-                                <b>*Note: Oracle/DBMS course details will be available upon request.</b>
-                            </p>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-
-        </div>
-    </section><!-- End F.A.Q Section -->
-    <!-- ======= Course detail Section ======= -->
-    <section id="faqc" class="faq section-bg">
-        <div class="container">
-
-            <div class="section-title">
-                <h2 data-aos="fade-up">Civil Engineering Course Details</h2>
-            </div>
-
-            <div class="faq-list">
-                <ul>
-                    <li data-aos="fade-up">
-                        <a data-toggle="collapse" href="#faq-list-8" class="collapsed"><i><img src="../image/course.png"
-                                    width="30px" height="30px"></i> AutoCAD package (AutoCAD, SWDTM) <i
-                                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-8" class="collapse" data-parent=".faq-list">
-                            <p>
-                                -Introduction to AutoCAD</br>
-                                -Working with drawing and editing commands</br>
-                                -Introduction to drawing precision settings</br>
-                                -Layers</br>
-                                -Advanced Object Types</br>
-                                -Measurement</br>
-                                -Editing Commands</br>
-                                -Working with blocks</br>
-                                -Layout and Plotting</br>
-                                -Annotating the Drawing</br>
-                                -Additional Course - SWDTM</br>
-                                </br>
-                                <b>*Note: Comprehensive course details will be available upon request.</b>
-                                </br>
-                            </p>
-                        </div>
-                    </li>
-
-                    <li data-aos="fade-up" data-aos-delay="100">
-                        <a data-toggle="collapse" href="#faq-list-9" class="collapsed"><i><img src="../image/course.png"
-                                    width="30px" height="30px"></i> Autodesk Civil3D package
-                            (Civil3D/Land Development, Infraworks)<i class="bx bx-chevron-down icon-show"></i><i
-                                class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-9" class="collapse" data-parent=".faq-list">
-                            <p>
-                                -Getting Started</br>
-                                -Working with points</br>
-                                -Surfaces</br>
-                                -Alignments</br>
-                                -Profiles</br>
-                                -Assemblies and Subassemblies</br>
-                                -Corridors</br>
-                                -Sections</br>
-                                -Production</br>
-                                </br>
-                                <b>
-                                    Additional Advanced Course – I (Optional)
-                                </b>
-                                </br>
-                                -Corridor Section Editor </br>
-                                -Intersections</br>
-                                -Sub-Assembly Composer</br>
-                                </br>
-                                <b>
-                                    Additional Advanced Course – II (Optional)
-                                </b>
-                                </br>
-                                -Infraworks</br>
-                                -Finding and Importing Data</br>
-                                -Terrain, Ground Imagery and Roads</br>
-                                -Water Data and Building Data</br>
-                                -3D Models</br>
-
-                                </br>
-                                <b>*Note: Comprehensive course details will be available upon request.</b>
-                                </br>
-                            </p>
-                        </div>
-                    </li>
-
-                    <li data-aos="fade-up" data-aos-delay="" 30px"0">
-                        <a data-toggle="collapse" href="#faq-list-10" class="collapsed"><i><img
-                                    src="../image/course.png" width="30px" height="30px"></i> GIS Training <i
-                                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-10" class="collapse" data-parent=".faq-list">
-                            <p>
-                                -Introduction to Arc GIS </br>
-                                -Working with ArcMap </br>
-                                -Data Processing with Attributes </br>
-                                -Data types </br>
-                                -Co-ordinate system </br>
-                                -Spatial analysis & Geoprocessing </br>
-                                -Maps </br>
-                                -Remote Sensing </br>
-
-                                </br>
-                                <b>*Note: Comprehensive course details will be available upon request.</b>
-                                </br>
-
-                            </p>
-                        </div>
-                    </li>
-
-                    <li data-aos="fade-up" data-aos-delay="300">
-                        <a data-toggle="collapse" href="#faq-list-11" class="collapsed"><i><img
-                                    src="../image/course.png" width="30px" height="30px"></i> Structural Package
-                            (ETABS, SAP, SAFE) <i class="bx bx-chevron-down icon-show"></i><i
-                                class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-11" class="collapse" data-parent=".faq-list">
-                            <p>
-                                -Review of IS code , NBC and AISC codes, Software Installation (ETABS /SAFE) </br>
-                                -Preliminary Design Calculations </br>
-                                -Modelling on ETABS </br>
-                                -Post Processing and building checks </br>
-                                -Response spectrum Analysis </br>
-                                -Design </br>
-                                -Detailing </br>
-                                -Structure Report </br>
-                                -Tall Building Design, Time History and push over analysis (Conceptual) </br>
-
-                                </br>
-                                <b>*Note: Comprehensive course details will be available upon request.</b>
-                                </br>
-
-
-                            </p>
-                        </div>
-                    </li>
-
-                    <li data-aos="fade-up" data-aos-delay="400">
-                        <a data-toggle="collapse" href="#faq-list-12" class="collapsed"><i><img
-                                    src="../image/course.png" width="30px" height="30px"></i> MS Project <i
-                                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-12" class="collapse" data-parent=".faq-list">
-                            <p>
-
-                                -Getting Started with Microsoft Project <br>
-                                -Project Formulation <br>
-                                -Project Tasks <br>
-                                -Managing tasks<br>
-                                -Critical Path <br>
-                                -Miscellaneous <br>
-                                -Project Resources and Costs <br>
-                                -Finalizing a Project Plan <br>
-                                -Updating a Project Plan <br>
-                                -Monitoring and reporting the project progress <br>
-                                -Working with Multiple Projects <br>
-
-                                </br>
-                                <b>*Note: Comprehensive course details will be available upon request.</b>
-                                </br>
-
-                            </p>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-
-        </div>
-    </section><!-- End F.A.Q Section --> --}}
+   
     <!-- contact -->
     <section class="contacT" id="contAct">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

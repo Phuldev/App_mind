@@ -5,7 +5,7 @@
 {{-- online_admission --}}
     <section class="Online_admission" stle="background-image: url(../image/air.png);background-repeat:no-repeat;background-position: center;">
         <div class="container">
-            <div class="online_title">online student admission form</div>
+            <div class="online_title" data-aos="fade-up" data-aos-delay="400">online student admission form</div>
             <p style="font-size:20px;text-align:center">Please fill out the form below and get enrolled now!</p>
                             {{-- php code  --}}
                             @if(Session::has('message_sent'))
@@ -19,41 +19,41 @@
                 <div class="user-details">
                     <div class="input-box">
                         <span class="details">Full Name</span>
-                        <input type="text" name="fname" placeholder="Enter Your name" required>
+                        <input data-aos="fade-up" data-aos-delay="400" type="text" name="fname" placeholder="Enter Your name" required>
                     </div>
                     <div class="input-box1">
                         <span style="font-size: 30px">Upload Imgae</span>
-                        <input type="file" name="fileToUpload" id="fileToUpload" required>
+                        <input data-aos="fade-up" data-aos-delay="400" type="file" name="fileToUpload" id="fileToUpload" required>
                     </div>
                     <div class="input-box">
                         <span class="details">E-mail</span>
-                        <input type="email" name="ad_email" placeholder="Enter Your email" required>
+                        <input data-aos="fade-up" data-aos-delay="400" type="email" name="ad_email" placeholder="Enter Your email" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Academic Level</span>
-                        <input type="text" name="academin" placeholder="Enter Your Academic Qulification " required>
+                        <input data-aos="fade-up" data-aos-delay="400" type="text" name="academin" placeholder="Enter Your Academic Qulification " required>
                     </div>
                     <div class="input-box">
                         <span class="details">Mobile Number</span>
-                        <input type="phone" name="ad_phone" placeholder="Enter Your Mobile" required>
+                        <input data-aos="fade-up" data-aos-delay="400" type="phone" name="ad_phone" placeholder="Enter Your Mobile" required minlength="10" maxlength="10">
                     </div>
                     <div class="input-box">
                         <span class="details">Address</span>
-                        <input type="text" name="Address" placeholder="Enter Your Address" required>
+                        <input data-aos="fade-up" data-aos-delay="400" type="text" name="Address" placeholder="Enter Your Address" required>
                     </div>
-                    <div class="input-box">
+                    <div class="input-box" data-aos="fade-up" data-aos-delay="400">
                         <span class="details">Courses</span>
                         {{-- <input type="text" name="courses" placeholder="Enter Your Courses" required> --}}
                         <select name="courses" id="" class="combo-box">
-                            <option name="courses"> PHP with its desired frameworks </option>
-                            <option name="courses"> Python with its desired frameworks</option>
-                            <option name="courses">graphic design </option>
-                            <option name="courses"> PHP with its desired frameworks </option>
-                            <option name="courses"> Python with its desired frameworks</option>
-                            <option name="courses">graphic design </option>
-                            <option name="courses"> PHP with its desired frameworks </option>
-                            <option name="courses"> Python with its desired frameworks</option>
-                            <option name="courses">graphic design </option>
+                            <option data-aos="fade-up" data-aos-delay="400" name="courses"> PHP with its desired frameworks </option>
+                            <option data-aos="fade-up" data-aos-delay="400" name="courses"> Python with its desired frameworks</option>
+                            <option data-aos="fade-up" data-aos-delay="400" name="courses">graphic design </option>
+                            <option data-aos="fade-up" data-aos-delay="400" name="courses"> PHP with its desired frameworks </option>
+                            <option data-aos="fade-up" data-aos-delay="400" name="courses"> Python with its desired frameworks</option>
+                            <option data-aos="fade-up" data-aos-delay="400" name="courses">graphic design </option>
+                            <option data-aos="fade-up" data-aos-delay="400" name="courses"> PHP with its desired frameworks </option>
+                            <option data-aos="fade-up" data-aos-delay="400" name="courses"> Python with its desired frameworks</option>
+                            <option data-aos="fade-up" data-aos-delay="400" name="courses">graphic design </option>
                             {{-- <option name="courses"></option> --}}
                         </select>
 
@@ -62,9 +62,9 @@
                         <span class="details">Schedule</span>
                         {{-- <input type="text" name="message" placeholder="Your schedule i.e. Morning/Day/Evening Shift" required> --}}
                         <select name="message" id="" class="combo-box">
-                            <option name="message"> Morning Shift</option>
-                            <option name="message"> Day Shift </option>
-                            <option name="message"> Evening Shift</option>
+                            <option data-aos="fade-up" data-aos-delay="400" name="message"> Morning Shift</option>
+                            <option data-aos="fade-up" data-aos-delay="400" name="message"> Day Shift </option>
+                            <option data-aos="fade-up" data-aos-delay="400" name="message"> Evening Shift</option>
                         </select>
                     </div>
                 </div>
