@@ -147,7 +147,8 @@
         <!-- top nav  -->
 
         <!-- nav bar  -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-menu fixed-top">
+
+        {{-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-menu fixed-top">
             <div class="container">
                 <a class="navbar-brand text-success" style="font-weight:bold;font-size:25px" href="/Human Resource"><img
                         src="../image/logo_with_out_name.png" height="50px" witdh="50px" alt="">&nbsp;MindRisers</a>
@@ -171,22 +172,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">contact</a>
                         </li>
-                         {{-- <li class="nav-item">    
-                            <a class="nav-link dropdown-toggle dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" > <i class="fas fa-user text-success"></i> Register</a>
-                            <span class="sr-only">Toggle Dropdown</span>
-                            <div class="dropdown-menu" style="float:left">
-                                <div>
-                                    <button type="submit" class="btn btn-success m-2 text-white" ><a href="/register" style="text-decoration:none; color:white">Want a  job</a></button> <br>
-                                    <button type="submit" class="btn btn-warning m-2" ><a href="/register"style="text-decoration:none; color:white">Post a  job</a></button>
-                                </div>
-                            </div>
-                        </li> --}}
-
-
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> --}}
         <!-- nav bar  -->
         {{-- headder_banner --}}
         {{-- <section class="hr-main text-center">
@@ -213,6 +202,54 @@
 
      <section class="p-5">
         @yield('content')
+                {{-- rough  --}}
+        {{-- style  --}}
+        <style>
+            #mySidenav a {
+              position: absolute;
+              left: -80px;
+              top:15px;
+              transition: 0.3s;
+              padding: 15px;
+              width: 100px;
+              text-decoration: none;
+              font-size: 20px;
+              color: white;
+              border-radius: 0 5px 5px 0;
+            }
+            
+            #mySidenav a:hover {
+              left: 0;
+            }
+            
+            #about {
+              top: 80px;
+              background-color: #4CAF50;
+            }
+            
+            #blog {
+              top: 80px;
+              background-color: #2196F3;
+            }
+            
+            #projects {
+              top: 140px;
+              background-color: #f44336;
+            }
+            
+            #contact {
+              top: 200px;
+              background-color: #555
+            }
+            </style>
+        {{-- style  --}}
+        <div id="mySidenav" class="sidenav">
+            <a href="#" id="about">Phuldev</a>
+            <a href="#" id="blog">Blog</a>
+            <a href="#" id="projects">Projects</a>
+            <a href="#" id="contact">Contact</a>
+          </div>
+        {{-- rough  --}}
      </section>
         
 

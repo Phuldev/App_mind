@@ -20,9 +20,99 @@
     <!-- teko fonts  -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    {{-- google fonts  --}}
+    <link rel="stylesheet" href="../font/Ranchers/Ranchers-Regular.ttf">
 </head>
+<style>
+    .loader-bg {
+        position: fixed;
+        z-index: 9999999;
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .body {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+    }
+    
+    .loader-bg img {
+        box-sizing: border-box;
+        position: relative;
+        top: 210px;
+        left: 600px;
+    }
+    
+    .loading {
+        width: 300px;
+        height: 300px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        border-top: 10px solid #0a6721;
+        position: relative;
+        animation: a1 2s linear infinite;
+    }
+    
+    .loading::before,
+    .loading::after {
+        content: "";
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 0;
+        top: -10;
+        box-sizing: border-box;
+        border-radius: 50%;
+    }
+    
+    .loading::before {
+        border-top: 10px solid #f3f705;
+        transform: rotate(120deg);
+    }
+    
+    .loading::after {
+        border-top: 10px solid #51cf20;
+        transform: rotate(240deg);
+    }
+    
+    .loading span {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        color: rgb(5, 43, 4);
+        text-align: center;
+        line-height: 200px;
+        animation: a2 2s linear infinite;
+    }
+    
+    @keyframes a1 {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+    @keyframes a2 {
+        to {
+            transform: rotate(-360deg);
+        }
+    }
+</style>
 
 <body>
+    <section class="loader-bg">
+        <div class="img"><img src="../image/logo.png" height="150px" width="150px" alt="">
+            <div class="body">
+                <div class="loading">
+                    <!-- <span>Loading...</span> -->
+                </div>
+            </div>
+        </div>
+    </section>
     <header id="">
         <!-- top nav  -->
         <section class="p-2" id="topnav"> 
@@ -30,19 +120,16 @@
             <div class="container">
                 <div class="row top-bar">
                     <div class="col text-left">
-                        <span class="text-white"><i class="fas fa-phone"></i> &nbsp; +9779823721337</span>
+                        <span class="text-white"><i class="fas fa-phone"></i> &nbsp; +97714221450</span>
                         <span class="text-white"><a href="https://mail.google.com/mail/u/2/#inbox?compose=new"><i
                                     class="fas fa-envelope"></i>&nbsp;
-                                teach.mindrisers@gmail.com</a></span>
+                                tech.mindrisers@gmail.com</a></span>
                         <span class="text-white"><i class="far fa-clock"></i> &nbsp; sun-fri 9am-5pm</span>
                     </div>
 
                     <div class="col text-right">
                         <span class="text-white">
                             <a href="https://www.facebook.com/MindRisersConsortium"><i class="fab fa-facebook"></i></a>
-                        </span>
-                        <span class="text-white">
-                            <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
                         </span>
                         <span class="text-white">
                             <a href="https://www.instagram.com/tech.mindrisers/"><i class="fab fa-instagram"></i></a>
@@ -55,9 +142,7 @@
                         <span class="text-white font-weight-bolder">
                             <a href="/Online Admission"><i class="fas fa-user">&nbsp;</i>Online Admission</a>
                         </span>
-                        {{-- <span class="text-white font-weight-bolder">
-                            <a href="/Human Resource"><i class="">&nbsp;</i>Human Resource </a>
-                        </span> --}}
+
                     </div>
                 </div>
             </div>
@@ -67,7 +152,7 @@
         <!-- nav bar  -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-menu">
             <div class="container">
-                <a class="navbar-brand text-success" style="font-weight:bold;font-size:25px" href="#"><img
+                <a class="navbar-brand text-white" style="font-weight:bold;font-size:25px" href="#"><img 
                         src="../image/logo_with_out_name.png" height="50px" witdh="50px" alt="">&nbsp;MindRisers</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -95,7 +180,7 @@
                     <form class="form-inline my-2 my-lg-0">
                         <button
                             class="btn btn-success my-2 my-sm-0 animate__animated animate__heartBeat  animate__delay-1s animate__infinite 	infinite"
-                            type="submit"><a href="#contAct" style="text-decoration: none;color:#fff;">GET
+                            type="submit"><a href="\Online Admission" style="text-decoration: none;color:#fff;">GET
                                 ENROLLED</a></button>
                     </form>
                 </div>
@@ -167,27 +252,27 @@
                             to be a bridge between the skilled graduates and to the business that seek them.</p>
                         <ul class="soCiaL">
                             <li><a href="https://www.facebook.com/MindRisersConsortium"><i
-                                        class="fab fa-facebook text-info"></i></a></li>
+                                        class="fab fa-facebook" style="color:#3b5998;"></i></a></li>
                             <li><a href="https://www.instagram.com/tech.mindrisers/"><i
-                                        class="fab fa-instagram text-danger"></i></a></li>
+                                        class="fab fa-instagram" style="color:#e95950;" ></i></a></li>
                             <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
                             <li><a href="https://www.linkedin.com/company/mindrisers/?viewAsMember=true"><i
-                                        class="fab fa-linkedin text-info"></i></a></li>
+                                        class="fab fa-linkedin text-info" style="color:#0e76a8;"></i></a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3 col-xs-12 links" data-aos="zoom-in-up" data-aos-duration="2000">
                         <h1 class="mt-lg-0 mt-sm-3">Quick links</h1>
                         <ul class="m-0 p-0">
-                            <li><a class="" href="#">Home</a></li>
-                            <li><a class="" href="#about">About</a></li>
-                            <li> <a class="" href="#services">Services</a></li>
-                            <li><a class="" href="#contAct">contact</a></li>
+                            <li><a class="" href="/home">Home</a></li>
+                            <li><a class="" href="/about">About</a></li>
+                            <li> <a class="" href="/services">Services</a></li>
+                            <li><a class="" href="/contact">contact</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-4 col-xs-12 location" data-aos="zoom-in-up" data-aos-duration="3000">
                         <h1 class="mt-lg-0 mt-sm-4">Location</h1>
                         <p><i class="text-white fa fa-map-marker">&nbsp;&nbsp;</i><a
-                                style="text-decoration: none; color:#000;"
+                                style="text-decoration: none; color:rgb(63, 61, 61);"
                                 href="https://goo.gl/maps/c5DUwXv3fjLFDn6d8">Kumari Galli 2, Kathmandu 44600</a></p>
                         <p><i class="text-white fa fa-phone">&nbsp;&nbsp;</i>+977014224751, +9779823721337</p>
                         <p><i class="text-white fa fa-envelope">&nbsp;&nbsp;</i>tech.mindrisers@gmail.com</p>
@@ -227,6 +312,12 @@
     <script src="../js/app.js"></script>
     <!-- Aos data  -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        setTimeout(function() {
+            $('.loader-bg').fadeToggle();
+        }, 500);
+    </script>
 
     <script>
         AOS.init();

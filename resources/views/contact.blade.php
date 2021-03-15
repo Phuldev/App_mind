@@ -33,20 +33,22 @@
                     <h2>Send Message</h2>
 
                     <div class="inputBOx">
+                        <label for="name">Name</label>
                         <input type="text" name="name" required="required">
-                        <span>Full Name</span>
                     </div>
                     <div class="inputBOx">
+                        <label for="mobile">Mobile Number</label>
                         <input type="phone" name="mobile" required="required" maxlength="10" minlength="10" >
-                        <span>Mobile No.</span>
+
                     </div>
                     <div class="inputBOx">
+                        <label for="email">E-mail</label>
                         <input type="email" name="email" required="required">
-                        <span>E-mail</span>
+                        
                     </div>
                     <div class="inputBOx">
+                        <label for="message">Type Your Message</label>
                         <textarea name="msg" required="required"></textarea>
-                        <span>Type your Message...</span>
                     </div>
                     <div class="inputBOx">
                         <input type="submit" class="form-control" value="Send">

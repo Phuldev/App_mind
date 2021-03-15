@@ -8,7 +8,7 @@
             <div class="sectioN">
                 <div class="left-sectioN">
                     <div class="conTent">
-                        <div class="tiTle">
+                        <div class="tiTle text-uppercase">
                             <h2 style="color:hsl(135, 2%, 40%);">About Us</h2>
                         </div>
                         <p>Founded in 2019, Mind Risers Consortium Pvt. Ltd is raduates and to be a bridge between the
@@ -23,14 +23,14 @@
                         <div class="button" data-aos="zoom-in-up" data-aos-duration="1500">
                             <a href="#contAct">Read more</a>
                         </div>
-                        <div class="sociAl" data-aos="zoom-in-up" data-aos-duration="2000">
+                        {{-- <div class="sociAl" data-aos="zoom-in-up" data-aos-duration="2000">
                             <a href="https://www.facebook.com/MindRisersConsortium"><i
                                     class="fab fa-facebook-f"></i></a>
                             <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
                             <a href="https://www.instagram.com/tech.mindrisers/"><i class="fab fa-instagram"></i></a>
                             <a href="https://www.linkedin.com/company/mindrisers/?viewAsMember=true"><i
                                     class="fab fa-linkedin"></i></a>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="image-sectioN">

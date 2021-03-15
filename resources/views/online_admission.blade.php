@@ -21,7 +21,7 @@
                         <span class="details">Full Name</span>
                         <input data-aos="fade-up" data-aos-delay="400" type="text" name="fname" placeholder="Enter Your name" required>
                     </div>
-                    <div class="input-box1">
+                    <div class="input-box">
                         <span style="font-size: 30px">Upload Imgae</span>
                         <input data-aos="fade-up" data-aos-delay="400" type="file" name="fileToUpload" id="fileToUpload" required>
                     </div>
